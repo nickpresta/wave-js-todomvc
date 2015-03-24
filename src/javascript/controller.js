@@ -1,4 +1,5 @@
 (function(window) {
+  'use strict';
 
   function Controller(model, view) {
     this.model = model;
@@ -17,7 +18,7 @@
     }.bind(this));
 
     this.render();
-  };
+  }
 
   Controller.prototype.render = function() {
     this.model.list(function(items) {
@@ -25,9 +26,9 @@
     }.bind(this));
   };
 
-  Controller.prototype._render = function(items, stats) {
-    var items = _formatItems(items);
-    var stats = this.model.getStats(items, function(stats) {
+  Controller.prototype._render = function(items) {
+    var formattedItems = _formatItems(items);
+    var stats = this.model.getStats(formattedItems, function(stats) {
       this.view.render(items, stats);
     }.bind(this));
   };
@@ -54,7 +55,7 @@
       i.formattedTotal = _formatAmount(i.total);
     });
     return data;
-  };
+  }
 
   function _formatAmount(amount) {
     var sign = Math.sign(amount);
@@ -65,7 +66,7 @@
     } else {
       return amount;
     }
-  };
+  }
 
   window.app = window.app || {};
   window.app.Controller = Controller;

@@ -7,7 +7,7 @@
     this.template = new app.Template();
     this.view = new app.View(this.template, el);
     this.controller = new app.Controller(this.model, this.view);
-  };
+  }
 
   var el = document.getElementById('content');
   var list = new List('receipts', el);

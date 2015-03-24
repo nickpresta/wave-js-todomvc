@@ -1,4 +1,6 @@
 (function(window) {
+  'use strict';
+
   window.$live = (function () {
     var eventRegistry = {};
 
