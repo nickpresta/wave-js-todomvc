@@ -1,0 +1,49 @@
+html {
+  height: 100%;
+  min-height: 100%;
+  background: url("https://d3mui6avu5pugx.cloudfront.net/sitestatic/float/images/new/bg-noise.png?ab7c17a74723") repeat left top; }
+
+body {
+  width: 900px;
+  padding: 25px;
+  margin: 10px auto;
+  border-radius: 5px;
+  border: 1px solid #D3D3D3;
+  background-color: rgb(244, 244, 244); }
+
+#Heading {
+  float: left; }
+  #Heading > i {
+    font-size: inherit;
+    vertical-align: top; }
+
+#Table .status-column--heading, #Table .status-column--cell {
+  width: 10px;
+  padding: 0; }
+#Table .action-column--heading, #Table .action-column--cell {
+  width: 60px;
+  padding: 0; }
+#Table .action-column--cell i {
+  cursor: pointer; }
+#Table .action-column--cell > i:first-child {
+  margin-right: 5px; }
+
+#Upload {
+  float: right;
+  margin-right: 5px;
+  margin-top: 32px; }
+  #Upload > i {
+    vertical-align: top;
+    color: inherit; }
+
+#Reload {
+  float: right;
+  margin-top: 32px; }
+  #Reload > i {
+    vertical-align: top;
+    color: inherit; }
+
+#Stats {
+  width: 400px;
+  margin: 0 auto;
+  max-width: 400px; }
