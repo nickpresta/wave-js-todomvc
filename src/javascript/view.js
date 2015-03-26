@@ -27,17 +27,13 @@
 
   View.prototype.bind = function(event, handler) {
     if (event === 'toggleStats') {
-      window.$live('.js-display-stats', 'click', function(e) {
-        handler();
-      }.bind(this));
+      window.$live('.js-display-stats', 'click', handler);
     } else if (event === 'deleteItem') {
       window.$live('.js-item-delete', 'click', function(e) {
         handler({id: e.target.dataset.id});
       });
     } else if (event === 'reloadData') {
-      window.$live('.js-reload-data', 'click', function(e) {
-        handler();
-      }.bind(this));
+      window.$live('.js-reload-data', 'click', handler);
     }
   };
 

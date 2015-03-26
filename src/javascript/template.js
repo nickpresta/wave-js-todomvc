@@ -17,11 +17,11 @@
     if (showStats) {
       statsDisplay = 'block';
     }
-    var stats = '' +
+    var statsBox = '' +
       '<div id="Stats" style="clear: both; display: ' + statsDisplay + '">' +
         this.stats(stats) +
       '</div>';
-    return top + stats + this.table(items);
+    return top + statsBox + this.table(items);
   };
 
   Template.prototype.table = function(items) {

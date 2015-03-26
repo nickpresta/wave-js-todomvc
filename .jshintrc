@@ -1,0 +1,23 @@
+{
+    // Wave JSHint Configuration File
+    // See http://jshint.com/docs/ for more details
+
+    "maxerr"        : 50,
+    "esnext"        : true,
+
+    // Enforcing
+    "camelcase"     : true,
+    "immed"         : true,
+    "indent"        : 2,
+    "newcap"        : true,
+    "nonew"         : true,
+    "quotmark"      : "single",
+    "maxlen"        : 120,
+
+    // Relaxing
+    "globalstrict"  : false,
+
+    // Environments
+    "browser"       : true,
+    "devel"         : true
+}

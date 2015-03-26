@@ -1,0 +1,5 @@
+{
+    "preset": "grunt",
+    "esnext": true,
+    "fileExtensions": [".js"]
+}
