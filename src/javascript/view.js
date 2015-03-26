@@ -7,7 +7,9 @@
   }
 
   View.prototype.render = function(items, stats) {
-    var $stats = this.$el.querySelector('#Stats');
+    // FIXME: grab the Stats box element
+    var $stats = undefined;
+    // ENDFIXME
     var statsStyle = 'none';
     if ($stats) {
       statsStyle = $stats.style.display;

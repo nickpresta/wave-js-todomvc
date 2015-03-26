@@ -53,7 +53,6 @@
   };
 
   Store.prototype.reset = function(cb) {
-    cb = cb || function() {};
     reset(this._storeName);
     cb.call(this, JSON.parse(window.localStorage[this._storeName]).items);
   };

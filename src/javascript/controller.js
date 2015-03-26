@@ -5,17 +5,19 @@
     this.model = model;
     this.view = view;
 
+    // FIXME: something is broken here
     this.view.bind('toggleStats', function() {
       this.toggleStats();
-    }.bind(this));
+    });
 
     this.view.bind('deleteItem', function(item) {
       this.removeItem(item.id);
-    }.bind(this));
+    });
 
     this.view.bind('reloadData', function() {
       this.reloadData();
-    }.bind(this));
+    });
+    // ENDFIXME
 
     this.render();
   }

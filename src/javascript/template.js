@@ -4,7 +4,9 @@
   function Template() {}
 
   Template.prototype.content = function(items, stats, showStats) {
-    showStats = showStats || false;
+    // FIXME: provide a default when showStats is not passed in
+    showStats = showStats;
+    // ENDFIXME
 
     var top = '' +
       '<div>' +
@@ -25,11 +27,15 @@
   };
 
   Template.prototype.table = function(items) {
+    // FIXME: is there another function we could use here
+    // that would be more concise?
+    // HINT: Think back to JS Koans and higher order functions
     var rows = [];
     items.forEach(function(item) {
       var row = this.row(item);
       rows.push(row);
     }.bind(this));
+    // ENDFIXME
 
     var table = '' +
     '<table id="Table" class="wv-table">' +
