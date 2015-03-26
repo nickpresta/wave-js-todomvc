@@ -1,14 +1,14 @@
-(function(app) {
-  'use strict';
+import Store from './storage';
 
-  function List(name, el) {
-    this.storage = new app.Store(name);
-    this.model = new app.Model(this.storage);
-    this.template = new app.Template();
-    this.view = new app.View(this.template, el);
-    this.controller = new app.Controller(this.model, this.view);
+class List {
+  constructor(name, el) {
+    this.storage = new Store(name);
+    this.model = new window.app.Model(this.storage);
+    this.template = new window.app.Template();
+    this.view = new window.app.View(this.template, el);
+    this.controller = new window.app.Controller(this.model, this.view);
   }
+}
 
-  var el = document.getElementById('content');
-  var list = new List('receipts', el);
-})(window.app);
+let el = document.getElementById('content');
+let list = new List('receipts', el);

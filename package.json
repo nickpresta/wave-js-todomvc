@@ -1,0 +1,19 @@
+{
+  "name": "es6-workshop-2015",
+  "version": "1.0.0",
+  "private": "true",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "./node_modules/.bin/watchify -v -e src/javascript/app.js src/javascript/[!app]*.js -t babelify --outfile bundle.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NickPresta/wave-js-todomvc.git"
+  },
+  "devDependencies": {
+    "babel": "4.7.16",
+    "babelify": "5.0.4",
+    "browserify": "9.0.3",
+    "watchify": "^2.6.1"
+  }
+}
